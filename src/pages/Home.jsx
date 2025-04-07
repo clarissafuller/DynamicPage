@@ -1,3 +1,8 @@
 export default function Home(second) {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <button type="button">Portfolio</button>
+      <button type="button">Clark's Table</button>
+    </>
+  );
 }
