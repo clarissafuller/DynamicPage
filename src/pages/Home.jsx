@@ -1,12 +1,15 @@
-export default function Home(second) {
+export default function Home() {
   function visitPage() {
     window.location = "http://www.clarissafuller.com/clarkstables";
+  }
+  function visitPortfolio() {
+    window.location = "http://www.clarissafuller.com/portfolio";
   }
   return (
     <>
       <h2>welcome to</h2>
       <h1>CLARISSAFULLER.COM</h1>
-      <p>you're probably here for one of two reasons:</p>
+      <p>You're probably here for one of two reasons:</p>
       <div className="longtextbox">
         <p>You're here to see my developer work</p>
         <p>or</p>
@@ -20,7 +23,9 @@ export default function Home(second) {
         you're adventure below:
       </p>
       <div className="buttonbox">
-        <button type="button">Portfolio</button>
+        <button onClick={visitPortfolio} type="button">
+          Portfolio
+        </button>
         <button onClick={visitPage} type="button">
           Clark's Table
         </button>
