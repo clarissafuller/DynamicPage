@@ -1,14 +1,212 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfaf6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pasta-block {
+  background-image: url("./assets/81DB57CF-DCE8-4DBB-AE7D-423C86D133E7_1_105_c.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pasta-block h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.pasta-block h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.pasta-block button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Yellow blocks */
+.yellow-block,
+.yellow-box {
+  background-color: #e89a32;
   text-align: center;
 }
 
-.card {
-  padding: 2em;
+.yellow-block h3,
+.yellow-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.yellow-block p,
+.yellow-box p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+/* Blue boxes */
+.blue-box {
+  background-color: #2252cd;
+  text-align: center;
+}
+
+.blue-box h2,
+.blue-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.blue-box p {
+  max-width: 700px;
+}
+
+/* Black boxes */
+.black-box {
+  background-color: #000000;
+  text-align: center;
+}
+
+.black-box h2,
+.black-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact Box */
+.contact-box {
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+
+.contact-box h2,
+.contact-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Recipe Club section */
+div:not([class]) {
+  background-color: #6e7d38;
+  text-align: center;
+}
+
+div:not([class]) h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+div:not([class]) p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+/* Buttons across the site */
+button {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+section {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.offer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section > * + * {
+  margin-top: 1rem;
+}
+
+.service-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-block {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive side-by-side */
+@media (min-width: 768px) {
+  .service-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .service-block {
+    flex: 1;
+    max-width: 45%;
+  }
+}
+
+.blue-box button {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.blue-box button:hover {
+  background-color: #222;
 }

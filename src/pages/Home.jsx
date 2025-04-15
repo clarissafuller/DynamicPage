@@ -1,10 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
-  function visitPage() {
-    window.location = "http://www.clarissafuller.com/clarkstables";
-  }
+  const navigate = useNavigate();
+
   function visitPortfolio() {
-    window.location = "http://www.clarissafuller.com/portfolio";
+    navigate("/portfolio");
   }
+  function visitClarksTables() {
+    window.location.assign("https://clarissafuller.com/clarkstables");
+  }
+
   return (
     <>
       <h2>welcome to</h2>
@@ -19,14 +24,14 @@ export default function Home() {
         </p>
       </div>
       <p>
-        Whichever path you're here for, I'm so glad you stopped by. Choose
-        you're adventure below:
+        Whichever path you're here for, I'm so glad you stopped by. Choose your
+        adventure below:
       </p>
       <div className="buttonbox">
         <button onClick={visitPortfolio} type="button">
           Portfolio
         </button>
-        <button onClick={visitPage} type="button">
+        <button onClick={visitClarksTables} type="button">
           Clark's Table
         </button>
       </div>
