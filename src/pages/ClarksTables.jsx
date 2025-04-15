@@ -1,3 +1,8 @@
+import aboutPhoto from "../assets/2A6BE774-E7D2-4990-B039-98B36A74C1F1_1_105_c.jpeg";
+import privateEventsPic from "../assets/FE7FACB5-143D-43A8-8BB3-0B3005AE9AE5_1_105_c.jpeg";
+import contentPic from "../assets/9343CD9D-2386-48AD-A30B-309DA4330E52_1_105_c.jpeg";
+import tablescapePic from "../assets/B54A18C4-3C0B-4055-BE75-F690768DD317_1_105_c.jpeg";
+
 export default function ClarksTables() {
   return (
     <>
@@ -7,23 +12,54 @@ export default function ClarksTables() {
         <button>Explore</button>
       </section>
       <section className="yellow-block">
-        <h3>ABOUT</h3>
-        <p>
-          Clark’s Tables began as a simple way to share my passion for cooking
-          and my love for bringing people together. What started as showcasing
-          everyday meals has blossomed into creating tablescapes that inspire
-          connection, laughter, and learning. Today, Clark’s Tables offers a
-          range of services, events, and culinary creations designed to elevate
-          gatherings of all kinds. And this is just the beginning—I’m excited to
-          see where this journey takes us next!
-        </p>
-        <button>Explore Services</button>
+        <div>
+          <img src={aboutPhoto} alt="Clark of Clark's Tables" />
+        </div>
+        <div>
+          <h3>ABOUT</h3>
+          <p>
+            Clark’s Tables began as a simple way to share my passion for cooking
+            and my love for bringing people together. What started as showcasing
+            everyday meals has blossomed into creating tablescapes that inspire
+            connection, laughter, and learning. Today, Clark’s Tables offers a
+            range of services, events, and culinary creations designed to
+            elevate gatherings of all kinds. And this is just the beginning—I’m
+            excited to see where this journey takes us next!
+          </p>
+          <button>Explore Services</button>
+        </div>
       </section>
       <section className="blue-box">
-        <h3>WHAT WE OFFER</h3>
-        <p>
-          Creating unforgettable moments to go along with unforgettable memories{" "}
-        </p>
+        <div className="picture-blocks">
+          <div className="offer-item">
+            <div className="image-container">
+              <img src={privateEventsPic} alt="picnic" />
+            </div>
+            <p>PRIVATE EVENTS</p>
+          </div>
+          <div className="offer-item">
+            <div className="image-container">
+              <img src={contentPic} alt="eggs and potatoes in a bowl" />
+            </div>
+            <p>CONTENT AND RECIPE DESIGN</p>
+          </div>
+          <div className="offer-item">
+            <div className="image-container">
+              <img
+                src={tablescapePic}
+                alt="charcuterie board on a dark table"
+              />
+            </div>
+            <p>TABLESCAPE DESIGN</p>
+          </div>
+        </div>
+        <div className="offer-text">
+          <h3>WHAT WE OFFER</h3>
+          <p>
+            Creating unforgettable moments to go along with unforgettable
+            memories
+          </p>
+        </div>
       </section>
       <section>
         <h3>CLARK'S RECIPE CLUB</h3>

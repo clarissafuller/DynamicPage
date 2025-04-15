@@ -143,9 +143,8 @@ button:hover {
 
 section {
   width: 100%;
-  max-width: 1000px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 4rem 1rem;
 }
@@ -187,7 +186,8 @@ section > * + * {
 @media (min-width: 768px) {
   .service-flex {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 
   .service-block {
@@ -209,4 +209,56 @@ section > * + * {
 
 .blue-box button:hover {
   background-color: #222;
+}
+
+.picture-blocks {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  text-align: center;
+}
+
+.offer-item img {
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.offer-item p {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.offer-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.offer-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.image-container {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
