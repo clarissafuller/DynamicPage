@@ -1,0 +1,164 @@
+.clarks-wrapper {
+  background-color: #fdfaf6;
+  font-family: Georgia, serif;
+}
+
+section {
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+.clarks-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.clarks-hero {
+  background-image: url("../assets/81DB57CF-DCE8-4DBB-AE7D-423C86D133E7_1_105_c.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.clarks-hero h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.clarks-hero h2 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* About Section */
+.clarks-about {
+  background-color: #e89a32;
+  color: white;
+}
+
+.clarks-about .clarks-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.clarks-about img {
+  max-width: 300px;
+  border-radius: 1rem;
+}
+
+/* Offers */
+.clarks-offers {
+  background-color: #2252cd;
+  color: white;
+  text-align: center;
+}
+
+.clarks-offer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.clarks-offer-item {
+  max-width: 250px;
+}
+
+.clarks-img-box {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.clarks-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .clarks-offer-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .clarks-about .clarks-inner {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .clarks-about-text {
+    max-width: 600px;
+  }
+}
+
+/* Recipe Club */
+.clarks-recipe-club {
+  background-color: #6e7d38;
+  color: white;
+  text-align: center;
+}
+
+/* Services */
+.clarks-services {
+  background-color: #e89a32;
+  color: white;
+  text-align: center;
+}
+
+/* Meal Prep / Retreat */
+.clarks-meal-retreat {
+  background-color: #2252cd;
+  color: white;
+  text-align: center;
+}
+
+.clarks-service-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.clarks-service-card {
+  background-color: white;
+  color: #000;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .clarks-service-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .clarks-service-card {
+    flex: 1;
+    max-width: 48%;
+  }
+}
