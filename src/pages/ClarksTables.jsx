@@ -4,6 +4,13 @@ import privateEventsPic from "../assets/FE7FACB5-143D-43A8-8BB3-0B3005AE9AE5_1_1
 import contentPic from "../assets/9343CD9D-2386-48AD-A30B-309DA4330E52_1_105_c.jpeg";
 import tablescapePic from "../assets/B54A18C4-3C0B-4055-BE75-F690768DD317_1_105_c.jpeg";
 
+const scrollToSection = (sectionClass) => {
+  const section = document.querySelector(`.${sectionClass}`);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export default function ClarksTables() {
   return (
     <div className="clarks-wrapper">
@@ -11,7 +18,7 @@ export default function ClarksTables() {
       <section className="clarks-hero">
         <h2>CLARK'S TABLES</h2>
         <h1>COME TAKE A SEAT</h1>
-        <button>Explore</button>
+        <button onClick={() => scrollToSection("clarks-about")}>Explore</button>
       </section>
 
       {/* About Section */}
@@ -29,7 +36,9 @@ export default function ClarksTables() {
               designed to elevate gatherings of all kinds. And this is just the
               beginning—I’m excited to see where this journey takes us next!
             </p>
-            <button>Explore Services</button>
+            <button onClick={() => scrollToSection("clarks-offers")}>
+              Explore Services
+            </button>
           </div>
         </div>
       </section>
@@ -79,7 +88,16 @@ export default function ClarksTables() {
             Your support helps me keep sharing my passion for food, design, and
             thoughtful hosting.
           </p>
-          <button>Join The Club</button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://patreon.com/clarkstables?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink",
+                "_blank"
+              )
+            }
+          >
+            Join The Club
+          </button>
         </div>
       </section>
 
@@ -93,7 +111,16 @@ export default function ClarksTables() {
             weekly meals or a custom dining experience for your retreat, I bring
             fresh, flavorful, and beautifully plated dishes to your table.
           </p>
-          <button>Book A Service</button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://app.squareup.com/appointments/book/1fpo7gq7nggmb4/LBQYJ8Y2BW553/start",
+                "_blank"
+              )
+            }
+          >
+            Book A Service
+          </button>
         </div>
       </section>
 
@@ -101,7 +128,7 @@ export default function ClarksTables() {
       <section className="clarks-meal-retreat">
         <div className="clarks-inner clarks-service-grid">
           <div className="clarks-service-card">
-            <h2>WEEKLY MEAL PREP</h2>
+            <h3>WEEKLY MEAL PREP</h3>
             <p>
               Homemade meals tailored to your preferences. Starting at:
               $400/week for 3–5 days of meals. Includes grocery shopping, meal
@@ -117,8 +144,20 @@ export default function ClarksTables() {
             </p>
           </div>
         </div>
-        <button>Book A Service</button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://app.squareup.com/appointments/book/1fpo7gq7nggmb4/LBQYJ8Y2BW553/start",
+              "_blank"
+            )
+          }
+        >
+          Book A Service
+        </button>
       </section>
+      <footer className="footer-text">
+        built by ClarissaFuller copyright 2025-2026
+      </footer>
     </div>
   );
 }

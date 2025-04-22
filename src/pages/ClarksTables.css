@@ -1,10 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .clarks-wrapper {
-  background-color: #fdfaf6;
+  background-color: #000000;
   font-family: Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+h3 {
+  color: #000;
+  font-size: 1.9rem;
+}
+
+p {
+  color: #000;
+  font-size: 1rem;
 }
 
 section {
-  width: 100%;
+  width: 90%;
   padding: 4rem 1rem;
 }
 
@@ -25,11 +53,13 @@ section {
 .clarks-hero h1 {
   font-size: 3rem;
   margin: 1rem 0;
+  color: white;
 }
 
 .clarks-hero h2 {
   font-size: 1.5rem;
   letter-spacing: 2px;
+  color: white;
 }
 
 button {
@@ -61,8 +91,7 @@ button:hover {
 }
 
 .clarks-about img {
-  max-width: 300px;
-  border-radius: 1rem;
+  max-width: 60%;
 }
 
 /* Offers */
@@ -88,7 +117,6 @@ button:hover {
   width: 250px;
   height: 250px;
   overflow: hidden;
-  border-radius: 1rem;
 }
 
 .clarks-img-box img {
@@ -101,16 +129,12 @@ button:hover {
 @media (min-width: 768px) {
   .clarks-offer-grid {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .clarks-about .clarks-inner {
     flex-direction: row;
     text-align: left;
-  }
-
-  .clarks-about-text {
-    max-width: 600px;
   }
 }
 
@@ -143,7 +167,6 @@ button:hover {
 }
 
 .clarks-service-card {
-  background-color: white;
   color: #000;
   border-radius: 1rem;
   padding: 2rem;
@@ -151,10 +174,15 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Text  */
+.footer-text {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .clarks-service-grid {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .clarks-service-card {

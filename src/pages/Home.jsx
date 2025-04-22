@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -28,10 +29,14 @@ export default function Home() {
         adventure below:
       </p>
       <div className="buttonbox">
-        <button onClick={visitPortfolio} type="button">
+        <button onClick={visitPortfolio} type="button" className="dev-button">
           Portfolio
         </button>
-        <button onClick={visitClarksTables} type="button">
+        <button
+          onClick={visitClarksTables}
+          type="button"
+          className="tables-button"
+        >
           Clark's Table
         </button>
       </div>
