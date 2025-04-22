@@ -8,7 +8,7 @@ export default function Home() {
     navigate("/portfolio");
   }
   function visitClarksTables() {
-    window.location.assign("https://clarissafuller.com/clarkstables");
+    navigate("/clarkstables");
   }
 
   return (
