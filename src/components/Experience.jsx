@@ -13,7 +13,7 @@ function ExperienceSection({ jobs }) {
       {isOpen && (
         <div className="experience-content">
           {jobs.map((job, index) => (
-            <div className="job" key={index}>
+            <div className="job-card" key={index}>
               <h3>{job.title}</h3>
               <p>{job.dates}</p>
               <ul>
