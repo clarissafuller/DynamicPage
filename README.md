@@ -2,7 +2,7 @@ DynamicPage
 
 # DynamicPage
 
-![Homepage Design](src/assets/welcome to.png)
+![Homepage Design](./src/assets/welcome to.png)
 
 **DynamicPage** is a sleek, responsive portfolio website built with React, Vite, and CSS.  
 After redesigning my portfolio multiple times, I created DynamicPage as a scalable and adaptable solution — built to evolve alongside my skills and career.
@@ -49,9 +49,9 @@ After redesigning my portfolio multiple times, I created DynamicPage as a scalab
 
 ## 📸 Screenshots
 
-|                                  Homepage                                  |                              Portfolio Section                              |                              Clark's Tables Section                              |
-| :------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-| ![Homepage Screenshot](src/assets/Screenshot 2025-04-28 at 4.20.01 PM.png) | ![Portfolio Screenshot](src/assets/Screenshot 2025-04-28 at 4.20.15 PM.png) | ![Clark's Tables Screenshot](src/assets/Screenshot 2025-04-28 at 4.20.26 PM.png) |
+|                                   Homepage                                   |                               Portfolio Section                               |                               Clark's Tables Section                               |
+| :--------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
+| ![Homepage Screenshot](./src/assets/Screenshot 2025-04-28 at 4.20.01 PM.png) | ![Portfolio Screenshot](./src/assets/Screenshot 2025-04-28 at 4.20.15 PM.png) | ![Clark's Tables Screenshot](./src/assets/Screenshot 2025-04-28 at 4.20.26 PM.png) |
 
 ---
 
