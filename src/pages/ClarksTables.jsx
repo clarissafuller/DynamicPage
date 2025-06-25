@@ -36,7 +36,7 @@ export default function ClarksTables() {
               designed to elevate gatherings of all kinds. And this is just the
               beginning—I’m excited to see where this journey takes us next!
             </p>
-            <button onClick={() => scrollToSection("clarks-offers")}>
+            <button onClick={() => window.open("/pricing.pdf", "_blank")}>
               Explore Services
             </button>
           </div>
@@ -46,32 +46,14 @@ export default function ClarksTables() {
       {/* What We Offer */}
       <section className="clarks-offers">
         <div className="clarks-inner">
-          <div className="clarks-offer-grid">
-            <div className="clarks-offer-item">
-              <div className="clarks-img-box">
-                <img src={privateEventsPic} alt="picnic" />
-              </div>
-              <p>PRIVATE EVENTS</p>
-            </div>
-            <div className="clarks-offer-item">
-              <div className="clarks-img-box">
-                <img src={contentPic} alt="eggs and potatoes" />
-              </div>
-              <p>CONTENT & RECIPE DESIGN</p>
-            </div>
-            <div className="clarks-offer-item">
-              <div className="clarks-img-box">
-                <img src={tablescapePic} alt="charcuterie board" />
-              </div>
-              <p>TABLESCAPE DESIGN</p>
-            </div>
-          </div>
-          <div className="clarks-offer-text">
-            <h3>WHAT WE OFFER</h3>
-            <p>
-              Creating unforgettable moments to go along with unforgettable
-              memories
-            </p>
+          <div className="offers-button-wrapper">
+            <button
+              onClick={() =>
+                window.open("https://clarkstables.square.site", "_blank")
+              }
+            >
+              Book Here
+            </button>
           </div>
         </div>
       </section>

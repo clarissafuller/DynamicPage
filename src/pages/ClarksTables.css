@@ -96,35 +96,41 @@ button:hover {
 
 /* Offers */
 .clarks-offers {
-  background-color: #2252cd;
+  background-image: url("../assets/booking.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4rem 1rem;
   text-align: center;
+  height: 48rem;
 }
 
-.clarks-offer-grid {
+.clarks-inner {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 2rem;
+  flex: 1;
 }
 
-.clarks-offer-item {
-  max-width: 250px;
+.offers-button-wrapper {
+  margin-bottom: -3rem;
 }
+@media (max-width: 767px) {
+  .clarks-offers {
+    height: 17rem;
 
-.clarks-img-box {
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
+    .offers-button-wrapper {
+      margin-bottom: -3rem;
+    }
+  }
 }
-
-.clarks-img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* Responsive Grid */
 @media (min-width: 768px) {
   .clarks-offer-grid {
