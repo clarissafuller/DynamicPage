@@ -76,15 +76,6 @@ export default function ClarksTables() {
       {/* Recipe Club */}
       <section className="clarks-recipe-club">
         <div className="clarks-inner">
-          <h3>CLARK'S RECIPE CLUB</h3>
-          <p>
-            Join me on Patreon for exclusive behind-the-scenes content, extended
-            cooking videos, and early access to my latest creations. As a member
-            of the table, you’ll get bonus recipes, detailed meal prep guides,
-            and sneak peeks into my tablescape designs before they hit YouTube.
-            Your support helps me keep sharing my passion for food, design, and
-            thoughtful hosting.
-          </p>
           <button
             onClick={() =>
               window.open(
@@ -93,41 +84,52 @@ export default function ClarksTables() {
               )
             }
           >
-            Join The Club
+            Get All My Recipes on SubStack
           </button>
         </div>
       </section>
 
-      {/* Meal Prep & Retreat Services */}
-      <section className="clarks-meal-retreat">
-        <div className="clarks-inner clarks-service-grid">
-          <div className="clarks-service-card">
-            <h3>WEEKLY MEAL PREP</h3>
-            <p>
-              Homemade meals tailored to your preferences. Starting at:
-              $400/week for 3–5 days of meals. Includes grocery shopping, meal
-              prep, packaging, and clean-up.
-            </p>
-          </div>
-          <div className="clarks-service-card">
-            <h3>RETREAT & VACATION CHEF</h3>
-            <p>
-              I’ll create a custom menu, cook on-site, and serve a tailored
-              experience for your group. Starting at: $75–$150 per person or
-              $500–$1,000 per day.
-            </p>
-          </div>
+      {/* Contact */}
+      <section className="clarks-contact">
+        <div className="clarks-contact-photo" />
+        <div className="clarks-contact-info">
+          <h2>Contact Me</h2>
+          <ul>
+            <li>
+              📧 <a href="mailto:your@email.com">your@email.com</a>
+            </li>
+            <li>
+              📸{" "}
+              <a href="https://instagram.com/yourhandle" target="_blank">
+                instagram.com/yourhandle
+              </a>
+            </li>
+            <li>
+              📘{" "}
+              <a href="https://facebook.com/yourhandle" target="_blank">
+                facebook.com/yourhandle
+              </a>
+            </li>
+            <li>
+              ▶️{" "}
+              <a href="https://youtube.com/@yourchannel" target="_blank">
+                youtube.com/@yourchannel
+              </a>
+            </li>
+            <li>
+              ✉️{" "}
+              <a href="https://your-substack.substack.com" target="_blank">
+                your-substack.substack.com
+              </a>
+            </li>
+            <li>
+              🌐{" "}
+              <a href="https://clarissafuller.com" target="_blank">
+                clarissafuller.com
+              </a>
+            </li>
+          </ul>
         </div>
-        <button
-          onClick={() =>
-            window.open(
-              "https://app.squareup.com/appointments/book/1fpo7gq7nggmb4/LBQYJ8Y2BW553/start",
-              "_blank"
-            )
-          }
-        >
-          Book A Service
-        </button>
       </section>
       <footer className="footer-text">
         built by ClarissaFuller copyright 2025-2026
