@@ -12,12 +12,11 @@ body {
 }
 
 .clarks-wrapper {
-  background-color: #000000;
   font-family: Georgia, serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100vw;
+  align-items: stretch;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -109,6 +108,7 @@ button:hover {
   padding: 4rem 1rem;
   text-align: center;
   height: 48rem;
+  padding: 0;
 }
 
 .clarks-inner {
@@ -144,16 +144,33 @@ button:hover {
   }
 }
 
+/* Menus */
+.clarks-menus {
+  background-image: url("../assets/menus.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4rem 1rem;
+  text-align: center;
+  height: 48rem;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .clarks-menus {
+    height: 17rem;
+  }
+}
+
 /* Recipe Club */
 .clarks-recipe-club {
   background-color: #6e7d38;
-  color: white;
-  text-align: center;
-}
-
-/* Services */
-.clarks-services {
-  background-color: #e89a32;
   color: white;
   text-align: center;
 }

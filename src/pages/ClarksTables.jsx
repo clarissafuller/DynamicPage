@@ -45,7 +45,7 @@ export default function ClarksTables() {
 
       {/* What We Offer */}
       <section className="clarks-offers">
-        <div className="clarks-inner">
+        <div className="clarks-offers-content clarks-inner">
           <div className="offers-button-wrapper">
             <button
               onClick={() =>
@@ -58,6 +58,21 @@ export default function ClarksTables() {
         </div>
       </section>
 
+      {/* Menus */}
+      <section className="clarks-menus">
+        <div className="clarks-inner">
+          <button
+            onClick={() =>
+              window.openwindow.open(
+                "https://clarkstables.square.site",
+                "_blank"
+              )
+            }
+          >
+            Order Your Own Today!
+          </button>
+        </div>
+      </section>
       {/* Recipe Club */}
       <section className="clarks-recipe-club">
         <div className="clarks-inner">
@@ -79,29 +94,6 @@ export default function ClarksTables() {
             }
           >
             Join The Club
-          </button>
-        </div>
-      </section>
-
-      {/* Private Services */}
-      <section className="clarks-services">
-        <div className="clarks-inner">
-          <h3>PRIVATE SERVICES</h3>
-          <p>
-            Enjoy a restaurant-quality dining experience in the comfort of your
-            home or vacation rental. Whether you’re looking for stress-free
-            weekly meals or a custom dining experience for your retreat, I bring
-            fresh, flavorful, and beautifully plated dishes to your table.
-          </p>
-          <button
-            onClick={() =>
-              window.open(
-                "https://app.squareup.com/appointments/book/1fpo7gq7nggmb4/LBQYJ8Y2BW553/start",
-                "_blank"
-              )
-            }
-          >
-            Book A Service
           </button>
         </div>
       </section>
