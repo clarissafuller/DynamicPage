@@ -1,8 +1,5 @@
 import "./ClarksTables.css";
-import aboutPhoto from "../assets/2A6BE774-E7D2-4990-B039-98B36A74C1F1_1_105_c.jpeg";
-import privateEventsPic from "../assets/FE7FACB5-143D-43A8-8BB3-0B3005AE9AE5_1_105_c.jpeg";
-import contentPic from "../assets/9343CD9D-2386-48AD-A30B-309DA4330E52_1_105_c.jpeg";
-import tablescapePic from "../assets/B54A18C4-3C0B-4055-BE75-F690768DD317_1_105_c.jpeg";
+import aboutPhoto from "/assets/2A6BE774-E7D2-4990-B039-98B36A74C1F1_1_105_c.jpeg";
 
 const scrollToSection = (sectionClass) => {
   const section = document.querySelector(`.${sectionClass}`);
@@ -18,7 +15,12 @@ export default function ClarksTables() {
       <section className="clarks-hero">
         <h2>CLARK'S TABLES</h2>
         <h1>COME TAKE A SEAT</h1>
-        <button onClick={() => scrollToSection("clarks-about")}>Explore</button>
+        <button
+          className="clarks-button"
+          onClick={() => scrollToSection("clarks-about")}
+        >
+          Explore
+        </button>
       </section>
 
       {/* About Section */}
@@ -36,7 +38,10 @@ export default function ClarksTables() {
               designed to elevate gatherings of all kinds. And this is just the
               beginning—I’m excited to see where this journey takes us next!
             </p>
-            <button onClick={() => window.open("/pricing.pdf", "_blank")}>
+            <button
+              className="clarks-button"
+              onClick={() => window.open("/pricing.pdf", "_blank")}
+            >
               Explore Services
             </button>
           </div>
@@ -48,6 +53,7 @@ export default function ClarksTables() {
         <div className="clarks-offers-content clarks-inner">
           <div className="offers-button-wrapper">
             <button
+              className="clarks-button"
               onClick={() =>
                 window.open("https://clarkstables.square.site", "_blank")
               }
@@ -62,6 +68,7 @@ export default function ClarksTables() {
       <section className="clarks-menus">
         <div className="clarks-inner">
           <button
+            className="clarks-button"
             onClick={() =>
               window.openwindow.open(
                 "https://clarkstables.square.site",
@@ -75,51 +82,53 @@ export default function ClarksTables() {
       </section>
       {/* Recipe Club */}
       <section className="clarks-recipe-club">
-        <div className="clarks-inner">
-          <button
-            onClick={() =>
-              window.open(
-                "https://patreon.com/clarkstables?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink",
-                "_blank"
-              )
-            }
-          >
-            Get All My Recipes on SubStack
-          </button>
-        </div>
+        <button
+          className="clarks-button"
+          onClick={() =>
+            window.open("https://substack.com/@clarkstables", "_blank")
+          }
+        >
+          Get All My Recipes on SubStack
+        </button>
       </section>
 
       {/* Contact */}
       <section className="clarks-contact">
         <div className="clarks-contact-photo" />
         <div className="clarks-contact-info">
-          <h2>Contact Me</h2>
+          <h2>LET'S CONNECT</h2>
           <ul>
             <li>
-              📧 <a href="mailto:your@email.com">your@email.com</a>
+              📧 <a href="clarkstableservices@gmail.com">EMAIL</a>
             </li>
             <li>
               📸{" "}
-              <a href="https://instagram.com/yourhandle" target="_blank">
-                instagram.com/yourhandle
+              <a href="https://instagram.com/clarks.tables" target="_blank">
+                INSTAGRAM
               </a>
             </li>
             <li>
               📘{" "}
-              <a href="https://facebook.com/yourhandle" target="_blank">
-                facebook.com/yourhandle
+              <a href="https://facebook.com/clarks.tables" target="_blank">
+                FACEBOOK
               </a>
             </li>
             <li>
               ▶️{" "}
-              <a href="https://youtube.com/@yourchannel" target="_blank">
-                youtube.com/@yourchannel
+              <a href="https://www.youtube.com/@ClarksTables" target="_blank">
+                YOUTUBE
               </a>
             </li>
             <li>
               ✉️{" "}
-              <a href="https://your-substack.substack.com" target="_blank">
-                your-substack.substack.com
+              <a href="https://substack.com/@clarkstables" target="_blank">
+                SUBSTACK
+              </a>
+            </li>
+            <li>
+              ✉️{" "}
+              <a href="https://www.tiktok.com/@clarks.tables" target="_blank">
+                TIKTOK
               </a>
             </li>
             <li>
