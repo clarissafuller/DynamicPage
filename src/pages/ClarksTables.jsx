@@ -70,10 +70,7 @@ export default function ClarksTables() {
           <button
             className="clarks-button"
             onClick={() =>
-              window.openwindow.open(
-                "https://clarkstables.square.site",
-                "_blank"
-              )
+              window.open("https://clarkstables.square.site", "_blank")
             }
           >
             Order Your Own Today!
